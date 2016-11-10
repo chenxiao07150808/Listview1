@@ -230,8 +230,11 @@ inflate       (R.layout.adapter__item, parent, false);确定他父控件，减�
                      holder= (ViewHolder) convertView.getTag();
                }
                holder.img.setImageResource(Integer.parseInt(date.get(position).get("img").toString()));
+
                holder.title.setText(date.get(position).get("title").toString());
+
                holder.info.setText(date.get(position).get("info").toString());
+
                if(position%2==1){
                    holder.layout.setBackgroundColor(ContextCompat.getColor(context,R.color.colorAccent));
 
